@@ -6,4 +6,4 @@ Proyecto de carro electrico controlado mediande App y brazo mioelectrico
 ![GitHub Logo](DiagramaArquitectura.png)
 
 
-![GitHub Logo](ComponentesCarro.png)
+![GitHub](ComponentesCarro.png)
