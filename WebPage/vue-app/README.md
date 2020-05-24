@@ -1,4 +1,4 @@
-# client
+# aplicacion vuejs realtime sockets
 
 ## Project setup
 ```
