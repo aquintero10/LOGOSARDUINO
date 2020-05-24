@@ -22,7 +22,7 @@ export default {
 	data: function () {
 		return {
 			username: "",
-			socket: io("http://dnscont01.southcentralus.azurecontainer.io:3001"),
+			socket: clientsConnection(),
 			messages: [],
 			users: []
 		}
@@ -55,6 +55,22 @@ export default {
 	},
 
 }
+
+function clientsConnection(){
+	var hosts = [{port:"3001"},{port:"3002"},{port:"3003"},{port:"3004"},{port:"3005"}]
+
+	for (var i in hosts.get) {
+		var name = 'ns' + i;
+		(function (name) {
+			x[name] = io.connect("http://dnscont01.southcentralus.azurecontainer.io/",hosts.get[i].port, { 'force new connection':true });
+			x[name].on('connect', function () {
+				console.log(x[name].socket.options.host + ' connected')
+			});
+		})(name);
+	}
+}
+
+
 
 </script>
 

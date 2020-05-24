@@ -10,11 +10,7 @@ let users = [];
 
 /******************** MONGODB ***************************** */
 
-<<<<<<< HEAD
 mongoose.connect('mongodb://dnscont02.southcentralus.azurecontainer.io:27015/Abajo', (err) => {
-=======
-mongoose.connect('mongodb://dnscont02.southcentralus.azurecontainer.io:27015/abajo', (err) => {
->>>>>>> 3d97f0bb756edbc4b2f7b1fe16c10f6efbdb1fc2
     if (err) throw err;
     console.log("connected to mongo");
 })
