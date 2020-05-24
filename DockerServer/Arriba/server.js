@@ -178,4 +178,4 @@ app.post('/barriba', function (req, res) {
   });
 
   res.send('movimiento adelante guardado');
-});
+});});
