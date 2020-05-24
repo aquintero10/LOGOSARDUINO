@@ -1,4 +1,4 @@
-# NodeJsGraphQLDockerApp
+# Servidor dockerizado GraphQL NODEJS y MONGO
 Simple crud App made with nodeJs and GraphQL under docker container
 
 ## Requirments 
