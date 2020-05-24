@@ -10,7 +10,7 @@ let users = [];
 
 /******************** MONGODB ***************************** */
 
-mongoose.connect('mongodb://dnscont02.southcentralus.azurecontainer.io:27017/LocalDB', (err) => {
+mongoose.connect('mongodb://dnscont02.southcentralus.azurecontainer.io:27017/derecha', (err) => {
     if (err) throw err;
     console.log("connected to mongo");
 })
@@ -83,7 +83,7 @@ setInterval(() => {
 
 
 http.listen(process.env.PORT || 3003, () => {
-	console.log("Listening on port %s", process.env.PORT || 3001);
+	console.log("Listening on port %s", process.env.PORT || 3003);
 });
 
 
