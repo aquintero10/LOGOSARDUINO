@@ -16,7 +16,7 @@
     "express-graphql": "^0.6.12",
     "graphql": "^14.0.2",
     "moment": "^2.25.3",
-    "mongoose": "^5.3.5",
+    "mongoose": "^5.7.5",
     "mqtt": "^3.0.0",
     "socket.io": "^2.3.0",
     "uuid": "^8.0.0"
